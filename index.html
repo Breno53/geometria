@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Geométrica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Calculadora Geométrica</h2>
+
+    <!-- Círculo -->
+    <div class="form-group">
+      <h3>Círculo</h3>
+      <input type="number" id="raio" placeholder="Raio">
+      <button onclick="calcularCirculo()">Calcular</button>
+      <p id="resultadoCirculo"></p>
+    </div>
+
+    <!-- Quadrado -->
+    <div class="form-group">
+      <h3>Quadrado</h3>
+      <input type="number" id="ladoQuadrado" placeholder="Lado">
+      <button onclick="calcularQuadrado()">Calcular</button>
+      <p id="resultadoQuadrado"></p>
+    </div>
+
+    <!-- Retângulo -->
+    <div class="form-group">
+      <h3>Retângulo</h3>
+      <input type="number" id="baseRet" placeholder="Base">
+      <input type="number" id="alturaRet" placeholder="Altura">
+      <button onclick="calcularRetangulo()">Calcular</button>
+      <p id="resultadoRetangulo"></p>
+    </div>
+
+    <!-- Losango -->
+    <div class="form-group">
+      <h3>Losango</h3>
+      <input type="number" id="diagMaior" placeholder="Diagonal Maior">
+      <input type="number" id="diagMenor" placeholder="Diagonal Menor">
+      <input type="number" id="ladoLos" placeholder="Lado">
+      <button onclick="calcularLosango()">Calcular</button>
+      <p id="resultadoLosango"></p>
+    </div>
+
+    <!-- Triângulo -->
+    <div class="form-group">
+      <h3>Triângulo</h3>
+      <input type="number" id="baseTri" placeholder="Base">
+      <input type="number" id="alturaTri" placeholder="Altura">
+      <input type="number" id="lado1" placeholder="Lado 1">
+      <input type="number" id="lado2" placeholder="Lado 2">
+      <input type="number" id="lado3" placeholder="Lado 3">
+      <button onclick="calcularTriangulo()">Calcular</button>
+      <p id="resultadoTriangulo"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
